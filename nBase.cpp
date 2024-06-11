@@ -10,6 +10,6 @@ int main()
 
     int oct = 012; // Octal number
     cout << oct << endl;
-    
+
     return 0;
 }
