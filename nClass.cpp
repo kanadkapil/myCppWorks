@@ -1,55 +1,27 @@
 #include <iostream>
+#include <conio.h>
 using namespace std;
 
-class Car
+class Student
 {
 public:
-    string Name;
-    string Color;
-    double Price;
-    Car(string name, string color, double price)
-    {
-        Name = name;
-        Color = color;
-        Price = price;
-    }
-    void getInfo()
-    {
-        cout << "Name: " << Name << endl;
-        cout << "Color: " << Color << endl;
-        cout << "Price: " << Price << endl;
-    }
+    int id;
+    float gpa;
 };
 
 int main()
 {
+    Student Abul;
+    Abul.id = 01;
+    Abul.gpa = 3.44;
 
-    Car myCar2("audi", "white", 7000);
-    myCar2.getInfo();
+    cout << Abul.id << " " << Abul.gpa << endl;
 
-    // normal class calling
-    // Car myCar2("audi", "white", 7000);
-    // cout << "Name: " << myCar2.Name << endl;
-    // cout << "clr: " << myCar2.Color << endl;
-    // cout << "price: " << myCar2.Price << endl;
+    Student Tup;
+    Tup.id = 02;
+    Tup.gpa = 3.75;
 
-    // this is for normal class calling
-    // Car myCar;
-    // myCar.Name = "ford";
-    // myCar.Color = "red";
-    // myCar.Price = 50000;
+    cout << Tup.id << " " << Tup.gpa << endl;
 
-    // cout << "Name: " << myCar.Name << endl;
-    // cout << "clr: " << myCar.Color << endl;
-    // cout << "price: " << myCar.Price << endl;
-
-    // Car myCar2;
-    // myCar2.Name = "audi";
-    // myCar2.Color = "white";
-    // myCar2.Price = 70000;
-
-    // cout << "Name: " << myCar2.Name << endl;
-    // cout << "clr: " << myCar2.Color << endl;
-    // cout << "price: " << myCar2.Price << endl;
-    return 0;
+    getch();
 }
