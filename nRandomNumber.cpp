@@ -1,14 +1,15 @@
-#include <iostream>
-#include<cstdlib>
-#include<ctime>
+#include<iostream>
+#include<stdlib.h>
+#include<conio.h>
 using namespace std;
-int main()
-{
-    // time(nullprt);
-    long elapsedSeconds = time(0); // seconds from jan 1970
-    srand(elapsedSeconds);
-    int n = rand()%10; // for 0 to 9 digits
-    cout << n<<endl;
-    // cout << elapsedSeconds;
-    return 0;
+
+int main(){
+    for(int i=1; i <=5; i++){
+        int randomNumber = rand()%10;
+        cout << "Random number: " << randomNumber << endl;
+    }
+        for(int i=1; i <=5; i++){
+        int randomNumber = rand()%10;
+        cout <<randomNumber;
+    }
 }
