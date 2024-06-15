@@ -33,7 +33,7 @@ int main()
 
     for (int i = 0; i < numberOfStudents; i++)
     {
-        int sid;
+        int sid; 
         float sgpa;
         string sname;
 
