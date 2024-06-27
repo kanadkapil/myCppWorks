@@ -1,38 +1,46 @@
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
-int bina(int n, int key, vector<int>& arr)
+int bins(int n, int key, vector<int> &arr)
 {
-    int s=0, e, mid;
-    while(s<=e){
-        mid=(s+e)/2;
-        if(arr[mid]==key) return mid;
-        else if(arr[mid]<key) s=mid+1;
-        else e=mid-1;
+    int s = 0, e = n, mid;
+
+    while (s <= e)
+    {
+        mid = (s + e) / 2;
+        if (arr[mid] == key)
+            return mid;
+        else if (arr[mid] < key)
+            s = mid + 1;
+        else
+            e = mid - 1;
     }
+
+    return -1;
 }
+
 int main()
 {
     int n, key;
-    cout << "enter number of ele: ";
+    cout << "Enter Number of element: ";
     cin >> n;
 
     vector<int> arr(n);
 
-    cout << "enter ele: ";
-    for(int i=0; i<n; i++){
+    for (int i = 0; i < n; i++)
+    {
         cin >> arr[i];
     }
-    cout << "arr=  ";
 
-        for(int i=0; i<n; i++){
-        cout << arr[i];
+cout << "array: [";
+    for (int i = 0; i < n; i++)
+    {
+        cout << " " <<  arr[i] << " ";
     }
+    cout << " ]" << endl;
 
-    cout << " enter key = ";
+    cout << "Enter Key: ";
     cin >> key;
-    cout << "result" << bina(n, key, arr);
-
+    cout << "result: " << bins(n, key, arr);
 }
