@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <climits>
+#include <climits> //for int max min
 using namespace std;
 
 void arrIn(int n, vector<int> &arr)
@@ -14,13 +14,13 @@ void arrIn(int n, vector<int> &arr)
 
 void arrOut(int n, vector<int> &arr)
 {
-    cout << "Array: [ ";
+    cout << "Array: [";
 
     for (int i = 0; i < n; i++)
     {
         cout << " " << arr[i] << " ";
     }
-    cout << "] ";
+    cout << "]";
     cout << endl; 
 }
 
