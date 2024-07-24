@@ -25,7 +25,7 @@ int main()
             cin >> val;
             myStack.push(val);
             cout << val << " is pushed";
-            ;
+            
             break;
 
         case 2:
