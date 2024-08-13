@@ -9,13 +9,11 @@ using namespace std;
 void generateRandomMatches(const vector<string> &teams) {
     vector<string> allMatches;
     int n = teams.size();
-    int matchNumber = 1;
     
     // Generate all possible matches
     for (int i = 0; i < n; ++i) {
         for (int j = i + 1; j < n; ++j) {
-            allMatches.push_back("Match " + to_string(matchNumber) + " : " + teams[i] + " vs " + teams[j]);
-            matchNumber++;
+            allMatches.push_back(teams[i] + " vs " + teams[j]);
         }
     }
     
@@ -24,9 +22,11 @@ void generateRandomMatches(const vector<string> &teams) {
     mt19937 g(rd());
     shuffle(allMatches.begin(), allMatches.end(), g);
     
-    // Output randomized matches
+    // Output matches in sequential order with randomized content
+    int matchNumber = 1;
     for (const auto &match : allMatches) {
-        cout << match << endl;
+        cout << "Match " << matchNumber << " : " << match << endl;
+        matchNumber++;
     }
 }
 
