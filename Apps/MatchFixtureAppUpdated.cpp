@@ -3,10 +3,11 @@
 #include <string>
 #include <algorithm>
 #include <random>
+#include <fstream> // For file operations
 
 using namespace std;
 
-void generateRandomMatches(const vector<string> &teams) {
+void generateRandomMatches(const vector<string> &teams, ofstream &outFile) {
     vector<string> allMatches;
     int n = teams.size();
     
@@ -26,6 +27,7 @@ void generateRandomMatches(const vector<string> &teams) {
     int matchNumber = 1;
     for (const auto &match : allMatches) {
         cout << "Match " << matchNumber << " : " << match << endl;
+        outFile << "Match " << matchNumber << " : " << match << endl;
         matchNumber++;
     }
 }
@@ -48,8 +50,18 @@ int main() {
         cin >> teams[i];
     }
     
+    // Open file for writing
+    ofstream outFile("Fixture.txt");
+    if (!outFile) {
+        cerr << "Error opening file for writing." << endl;
+        return 1;
+    }
+    
     cout << "Generating randomized match fixtures..." << endl;
-    generateRandomMatches(teams);
+    generateRandomMatches(teams, outFile);
+    
+    // Close file
+    outFile.close();
     
     return 0;
 }
