@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int arr[6] = {6,5,78,8,9};
+    // Write your code here to find maximum element of the array
+    int temp = 0;
+
+    for (int a = 0; a < 5; a++)
+    {
+        if (arr[a] > temp)
+        {
+            temp = arr[a];
+        }
+    }
+    cout << temp;
+}
