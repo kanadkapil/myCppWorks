@@ -1,3 +1,6 @@
+#include <bits/stdc++.h>                   // Universal header
+
+
 #include <iostream>     // For input/output stream (cin, cout, etc.)
 #include <fstream>      // For file handling (file streams)
 #include <sstream>      // For string streams (string-based I/O)
