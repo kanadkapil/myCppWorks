@@ -1,0 +1,44 @@
+#include <iostream>     // For input/output stream (cin, cout, etc.)
+#include <fstream>      // For file handling (file streams)
+#include <sstream>      // For string streams (string-based I/O)
+#include <string>       // For string manipulation
+#include <vector>       // For dynamic array (vector container)
+#include <array>        // For fixed-size array
+#include <list>         // For doubly linked list container
+#include <deque>        // For double-ended queue
+#include <map>          // For map (associative container with key-value pairs)
+#include <unordered_map> // For unordered_map (hash-based map)
+#include <set>          // For set (unique, ordered collection)
+#include <unordered_set> // For unordered_set (hash-based set)
+#include <stack>        // For stack (LIFO container)
+#include <queue>        // For queue (FIFO container)
+#include <algorithm>    // For standard algorithms (sort, reverse, etc.)
+#include <cmath>        // For mathematical functions (sqrt, pow, etc.)
+#include <cstdlib>      // For general-purpose functions (memory allocation, rand, etc.)
+#include <ctime>        // For time and date functions
+#include <climits>      // For limits of integral types (INT_MAX, etc.)
+#include <cfloat>       // For limits of floating-point types (FLT_MAX, etc.)
+#include <cstring>      // For C-style string manipulation (strlen, strcpy, etc.)
+#include <cctype>       // For character classification (isalpha, isdigit, etc.)
+#include <exception>    // For exception handling (std::exception, etc.)
+#include <stdexcept>    // For standard exception types (std::logic_error, std::runtime_error)
+#include <typeinfo>     // For type identification (typeid)
+#include <functional>   // For function objects, bind, and callable objects
+#include <iterator>     // For iterators and iterator-related utilities
+#include <thread>       // For multithreading (std::thread, etc.)
+#include <mutex>        // For synchronization (mutexes, locks)
+#include <condition_variable> // For condition variables (for thread synchronization)
+#include <atomic>       // For atomic operations (for concurrency)
+#include <future>       // For asynchronous operations and futures
+#include <memory>       // For memory management (smart pointers, etc.)
+#include <new>          // For low-level memory management (placement new)
+#include <limits>       // For numeric limits (std::numeric_limits)
+#include <bitset>       // For bitset (collection of bits)
+#include <complex>      // For complex numbers
+#include <valarray>     // For valarray (for numerical computations)
+#include <locale>       // For localization and locale-specific features
+#include <regex>        // For regular expressions
+#include <exception>    // For exception handling
+#include <iterator>     // For working with iterators
+#include <cmath>        // For mathematical functions
+#include <cstdlib>      // For general utilities like random numbers
