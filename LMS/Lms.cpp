@@ -20,6 +20,12 @@ private:
     vector<Book> books;
 public:
     void addBook(int id, string title, string author) {
+        for (auto &book : books) {
+            if (book.id == id) {
+                cout << "Invalid book ID, previously registered.\n";
+                return;
+            }
+        }
         books.push_back(Book(id, title, author));
         cout << "Book added successfully!\n";
     }
@@ -80,12 +86,25 @@ int main() {
 
         switch (choice) {
             case 1:
-                cout << "Enter Book ID, Title, and Author: ";
-                cin >> id;
-                cin.ignore();
-                getline(cin, title);
-                getline(cin, author);
-                lib.addBook(id, title, author);
+                while (true) {
+                    cout << "Enter Book ID, Title, and Author: ";
+                    cin >> id;
+                    cin.ignore();
+                    getline(cin, title);
+                    getline(cin, author);
+                    bool exists = false;
+                    for (auto &book : lib.books) {
+                        if (book.id == id) {
+                            cout << "Invalid book ID, previously registered. Please enter a new book ID.\n";
+                            exists = true;
+                            break;
+                        }
+                    }
+                    if (!exists) {
+                        lib.addBook(id, title, author);
+                        break;
+                    }
+                }
                 break;
             case 2:
                 lib.displayBooks();
