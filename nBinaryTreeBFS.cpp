@@ -11,7 +11,28 @@ struct Node {
     }
 };
 
+void printBFS(Node* root){
 
+    queue <Node *> q;
+
+    q.push(root); // for pushing the root node 
+
+    while(!q.empty()){ // chech if empty
+
+        Node * n = q.front();
+        q.pop();
+        cout << n -> data << " ";
+
+        if(n -> left != NULL){
+            q.push(n->left);
+        }
+        if(n -> right != NULL){
+            q.push(n->right);
+        }
+
+    }
+
+}
 
 int main(){
     Node *r = new Node(1);
@@ -30,6 +51,10 @@ int main(){
     rl -> right = rlr;
     rr -> left = rrl;
     rr -> right = rrr;
+
+    printBFS(r);
+
+
 
 
 }
