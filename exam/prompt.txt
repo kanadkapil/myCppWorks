@@ -1,0 +1,174 @@
+give me some dsa easy questions so that i can get used to with the cpp syntax and can crack my exams 1 day after.
+give me atleast 10 questions.
+
+🧠 10 Easy DSA Questions in C++
+1. Reverse an Array
+Problem: Given an array, reverse it in place.
+Concepts: Arrays, loops, swapping.
+
+2. Check if a String is a Palindrome
+Problem: Write a function to check whether a string reads the same backward.
+Concepts: Strings, two-pointer approach.
+
+3. Find Maximum and Minimum in an Array
+Problem: Return the max and min elements from an array.
+Concepts: Array traversal, conditionals.
+
+4. Sum of All Elements in an Array
+Problem: Given an array of integers, return the sum.
+Concepts: Arrays, loops, accumulator.
+
+5. Linear Search
+Problem: Search for a key in an array using linear search.
+Concepts: Arrays, loops, conditionals.
+
+6. Count the Number of Even and Odd Numbers in an Array
+Problem: Count how many numbers are even and how many are odd.
+Concepts: Modulus, loops, conditionals.
+
+7. Check if a Number is Prime
+Problem: Write a function that returns true if the number is prime.
+Concepts: Loops, math.
+
+8. Print Fibonacci Series up to N Terms
+Problem: Generate the Fibonacci series up to N terms.
+Concepts: Loops, variables.
+
+9. Find the Second Largest Element in an Array
+Problem: Return the second largest unique element in the array.
+Concepts: Arrays, conditionals, edge cases.
+
+10. Check if an Array is Sorted
+Problem: Return true if the array is sorted in non-decreasing order.
+Concepts: Arrays, loops, condition checking.
+
+
+///////////////////////
+
+
+ 10. Practice Questions (Must Do)
+✅ Arrays: Find max/min, reverse array
+
+✅ Strings: Palindrome check, count vowels
+
+✅ OOP: Create class Car with speed, mileage
+
+✅ STL: Frequency count using map
+
+✅ Sorting: Sort 0s, 1s, and 2s (Dutch National Flag)
+
+✅ Recursion: Fibonacci, sum of digits
+
+✅ Linked List: Insert, delete, print
+
+✅ Stack/Queue: Balanced parentheses check
+
+
+also give questions form the advance topics aswell
+
+
+✅ Easy / Must-Do Practice Questions (Recap & Expanded)
+🔹 Arrays
+Find max/min element in an array.
+
+Reverse an array in place.
+
+Find the missing number in a sequence 1 to n.
+
+🔹 Strings
+Check if a string is palindrome.
+
+Count vowels, consonants, digits, and spaces.
+
+Remove duplicates from a string.
+
+🔹 OOP (C++)
+Create a class Car with attributes: speed, mileage, and member functions like displayInfo().
+
+Overload + operator to add mileage of two cars.
+
+Use constructor and destructor in a class.
+
+🔹 STL (Standard Template Library)
+Use a map to count frequency of characters in a string.
+
+Sort a vector of pairs by second element using sort() and custom comparator.
+
+🔹 Sorting
+Sort an array of 0s, 1s, and 2s (Dutch National Flag problem).
+
+Bubble sort / Insertion sort / Selection sort (practice basics).
+
+🔹 Recursion
+Print Fibonacci series up to n.
+
+Sum of digits using recursion.
+
+Check if array is sorted recursively.
+
+🔹 Linked List
+Insert node at head and tail.
+
+Delete a node from a given position.
+
+Print the linked list.
+
+Reverse a linked list (Iterative + Recursive).
+
+🔹 Stack / Queue
+Check for balanced parentheses using a stack.
+
+Implement stack using array or queue using two stacks.
+
+🔥 Advanced DSA Practice Questions
+🔹 Binary Search
+Find the first and last occurrence of an element in sorted array.
+
+Square root of a number using binary search.
+
+🔹 Sliding Window
+Maximum sum subarray of size k.
+
+Longest substring with unique characters.
+
+🔹 Two Pointers
+Pair with target sum in a sorted array.
+
+Remove duplicates from sorted array in-place.
+
+🔹 Greedy Algorithms
+Activity selection problem.
+
+Minimum number of platforms needed for trains.
+
+🔹 Dynamic Programming
+0/1 Knapsack Problem
+
+Longest Common Subsequence (LCS)
+
+Fibonacci (Memoization + Tabulation)
+
+Coin change problem
+
+🔹 Trees
+Inorder / Preorder / Postorder traversal
+
+Check if a binary tree is balanced
+
+Find height of a binary tree
+
+🔹 Graphs
+BFS and DFS traversal
+
+Detect cycle in a graph (using DFS/BFS)
+
+Dijkstra’s shortest path algorithm
+
+🔹 Tries / Heaps / Advanced STL
+Implement a Trie for prefix search.
+
+Use a priority queue (min-heap) to get the k largest/smallest elements.
+
+Use unordered_map and unordered_set for hashing problems.
+
+
